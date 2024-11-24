@@ -4,12 +4,16 @@ html, body {
     padding: 0;
     height: 100%;
     overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+body {
     display: flex;
     flex-direction: column;
+    min-height: 100vh; /* Ensure the body stretches to the full height of the viewport */
 }
 
 .content {
-    flex: 1; /* Pushes footer to the bottom when content is less */
+    flex: 1; /* Pushes footer to the bottom if content is less */
 }
 
 /* Footer Styling */
